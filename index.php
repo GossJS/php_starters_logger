@@ -20,7 +20,8 @@
   echo <<<_END
   				<div>
   					<label>Сообщение</label>
-  					<input id="message" name="message" required="required" type="text"><button type="submit">Отправить сообщение</button>
+  					<input id="message" name="message" required="required" type="text">
+            <button type="submit">Отправить сообщение</button>
   				</div>
 _END;
   echo "</form></div>";
