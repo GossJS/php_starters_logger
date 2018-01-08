@@ -1,5 +1,5 @@
 <?php
-  $f = fopen('log.txt', 'a');
+  $f = fopen('log.txt', 'r');
   $list = '';
   $list .= '<ul>';
   function wrap($x){
@@ -8,6 +8,6 @@
   while (($line = fgets($f)) !== false) {
       echo wrap($line);
   }
-  fclose($handle);
+  fclose($f);
   $list .= '</ul>';
   return $list;
