@@ -6,7 +6,7 @@
     return '<li>'.$x.'</li>';
   }
   while (($line = fgets($f)) !== false) {
-      echo wrap($line);
+      $list .= wrap($line);
   }
   fclose($f);
   $list .= '</ul>';
