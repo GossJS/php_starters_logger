@@ -12,7 +12,7 @@
 
       $f = '<style>.right {width: 60%; margin-left: 35%; zoom: 80%}</style>';
       $f .= '<div class="right"><h2>Добавить ещё один отзыв...</h2></div>';
-      echo '<h3>Данные успешно добавлены, спасибо!</h3>';
+      echo '<h3 style="color:green">Данные успешно добавлены, спасибо!</h3>';
   }
   echo $f;
   echo "<div class=\"right\">";
@@ -25,4 +25,4 @@
 _END;
   echo "</form></div>";
   echo "<h2>Список отзывов... </h2>\n";
-  echo require_once ('table.php');
+  echo require_once ('list.php');
